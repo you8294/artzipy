@@ -1,718 +1,638 @@
 <!DOCTYPE html>
+
 <html lang="ko">
-
 <head>
-  <meta charset="UTF-8">
-  <!-- 뷰포트 설정 - 반응형을 위한 메타태그 -->
-  <meta name="viewport" content="width=1400px">
-
-  <!-- 파비콘 - 브라우저 탭 아이콘 -->
-  <link href="./images/a0p.png" rel="icon" type="image/png" sizes="32x32">
-
-  <!-- 페이지 제목 -->
-  <title>아트지피 - 창작부터 판매까지 올인원 아트 플랫폼</title>
-
-  <!-- 외부 폰트 로딩 -->
-  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/projectnoonnu/2507-1@1.0/Cafe24PROUP.woff2">
-
-  <!-- 외부 CSS -->
-  <link rel="stylesheet" href="./css/artzipy08141.css">
-<!-- 처장 로드 빨리되게 하기 -->
-  <link rel="preload" as="image" href="./images/b1.png">
+<meta charset="utf-8"/>
+<!-- 뷰포트 설정 - 반응형을 위한 메타태그 -->
+<meta content="width=1400px" name="viewport"/>
+<!-- 파비콘 - 브라우저 탭 아이콘 -->
+<link href="./images/a0p.png" rel="icon" sizes="32x32" type="image/png"/>
+<!-- 페이지 제목 -->
+<title>아트지피 - 창작부터 판매까지 올인원 아트 플랫폼</title>
+<!-- 외부 폰트 로딩 -->
+<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css" rel="stylesheet"/>
+<link href="https://fastly.jsdelivr.net/gh/projectnoonnu/2507-1@1.0/Cafe24PROUP.woff2" rel="stylesheet"/>
+<!-- 외부 CSS -->
+<link href="./css/artzipy08141.css" rel="stylesheet"/>
+<!-- 첫장 로드 빨리되게 하기 -->
+<link as="image" href="./images/b1.webp" rel="preload"/>
 </head>
-
 <body>
-
-  <!-- ========== 상단 헤더 영역 ========== -->
-  <div id="main_wrap">
-    <header id="header">
-      <div class="wrap">
-
-        <div class="logo_section" id="logoSection">
-          <div class="logo_img">
-            <img src="./images/a1.png" alt="아트지피 로고" width="40" loading="eager">
-          </div>
-          <span class="logo_text">아트지피</span>
-        </div>
-
-        <ul class="nav">
-          <li><a href="#platform_features">Artzipy</a></li>
-          <li><a href="#exhibition">현재전시</a></li>
-          <li><a href="#artist">이달의작가</a></li>
-          <li><a href="#artwork_gallery">일러스트작품</a></li>
-          <li><a href="#features_group_bg1">시설안내</a></li>
-          <li><a href="#newsletter">뉴스레터</a></li>
-          <li><a href="#products">아트상품</a></li>
-        </ul>
-
-        <div class="header_right">
-          <div class="search_box">
-            <input type="text" placeholder="검색" aria-label="사이트 검색">
-            <div class="search_icon">
-              <img src="./images/a2.png" alt="검색" width="16" loading="lazy">
-            </div>
-          </div>
-          <div class="auth_links">
-            <a href="#login">로그인</a>
-            <a href="#signup">가입</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- ========== 메인 배너 슬라이더 ========== -->
-    <section id="main_banner">
-      <div class="banner_overlay"></div>
-
-      <div class="banner_content">
-        <h1 class="banner_title">Artzipy</h1>
-        <p class="banner_subtitle">Artistic Vision</p>
-        <p class="banner_description">창작부터 판매까지, 모든 것이 하나의 플랫폼에서 이루어지는 아트공간</p>
-      </div>
-
-      <div class="banner_slides">
-        <div class="banner_slide active" data-bg="./images/b1.png"></div>
-        <div class="banner_slide" data-bg="./images/b2.png"></div>
-        <div class="banner_slide" data-bg="./images/b3.png"></div>
-        <div class="banner_slide" data-bg="./images/b4.png"></div>
-        <div class="banner_slide" data-bg="./images/b5.png"></div>
-      </div>
-
-      <button class="banner_arrow prev" type="button" aria-label="이전 슬라이드">‹</button>
-      <button class="banner_arrow next" type="button" aria-label="다음 슬라이드">›</button>
-      <div class="banner_dots"></div>
-    </section>
-
-    <!-- ========== 플랫폼 기능 소개 ========== -->
-    <section id="platform_features">
-      <div class="wrap">
-        <div class="features_title">
-          <h2 class="section_title">당신의 예술을 <span class="zip_text">ZIP</span>하라!</h2>
-        </div>
-
-        <div class="features_grid">
-          <div class="feature_card" data-bg="./images/c1.png">
-            <div class="feature_bg creation"></div>
-            <div class="feature_overlay"></div>
-            <div class="feature_content">
-              <div class="feature_icon hover-trigger">
-                <img src="./images/c1_1.png" alt="창작 아이콘" width="80" loading="lazy" decoding="async">
-              </div>
-              <h3 class="feature_title">창작</h3>
-              <button class="feature_button" type="button">둘러보기</button>
-            </div>
-          </div>
-
-          <div class="feature_card" data-bg="./images/c2.png">
-            <div class="feature_bg storage"></div>
-            <div class="feature_overlay"></div>
-            <div class="feature_content">
-              <div class="feature_icon hover-trigger">
-                <img src="./images/c2_1.png" alt="보관 아이콘" width="65" loading="lazy" decoding="async">
-              </div>
-              <h3 class="feature_title">보관</h3>
-              <button class="feature_button" type="button">둘러보기</button>
-            </div>
-          </div>
-
-          <div class="feature_card" data-bg="./images/c3.png">
-            <div class="feature_bg exhibition"></div>
-            <div class="feature_overlay"></div>
-            <div class="feature_content">
-              <div class="feature_icon hover-trigger">
-                <img src="./images/c3_1.png" alt="전시 아이콘" width="65" loading="lazy" decoding="async">
-              </div>
-              <h3 class="feature_title">전시</h3>
-              <button class="feature_button" type="button">둘러보기</button>
-            </div>
-          </div>
-
-          <div class="feature_card" data-bg="./images/c4.png">
-            <div class="feature_bg sales"></div>
-            <div class="feature_overlay"></div>
-            <div class="feature_content">
-              <div class="feature_icon hover-trigger">
-                <img src="./images/c4_1.png" alt="판매 아이콘" width="60" loading="lazy" decoding="async">
-              </div>
-              <h3 class="feature_title">판매</h3>
-              <button class="feature_button" type="button">둘러보기</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 현재 전시 ========== -->
-    <section id="exhibition">
-      <div class="wrap">
-        <h2 class="exhibition_title">현재 전시</h2>
-        <p class="exhibition_subtitle">포켓 안의 계절들 — Artzipy 개관전</p>
-
-        <div class="exhibition_details_row">
-          <div class="detail_item">
-            <img src="./images/d1.png" alt="일정" class="detail_icon_img" loading="lazy" decoding="async">
-            <span class="detail_text">2025.08.10(토) ~ 09.01(일)</span>
-          </div>
-          <div class="detail_item">
-            <img src="./images/d2.png" alt="시간" class="detail_icon_img" loading="lazy" decoding="async">
-            <span class="detail_text">매일 11:00 — 19:00 (월요일 휴관)</span>
-          </div>
-          <div class="detail_item">
-            <img src="./images/d3.png" alt="위치" class="detail_icon_img" loading="lazy" decoding="async">
-            <span class="detail_text">부산광역시 중구 중앙대로 26 10층 Artzipy Gallery</span>
-          </div>
-        </div>
-
-        <div class="exhibition_images">
-          <div class="exhibition_img hover-zoom">
-            <img src="./images/d4.png" alt="나를찾아서 전시 작품" loading="lazy" decoding="async">
-          </div>
-          <div class="exhibition_img hover-zoom">
-            <img src="./images/d5.png" alt="소소한일상 전시 작품" loading="lazy" decoding="async">
-          </div>
-          <div class="exhibition_img hover-zoom">
-            <img src="./images/d6.png" alt="불팥위의점심 전시 작품" loading="lazy" decoding="async">
-          </div>
-        </div>
-
-        <div class="exhibition_categories">
-          <div class="category_item">
-            <div>
-              <p class="category_info">오프라인전시</p>
-              <h3 class="category_title">나를 찾아서</h3>
-            </div>
-            <div class="category_arrow">→</div>
-          </div>
-          <div class="category_item">
-            <div>
-              <p class="category_info">오프라인전시</p>
-              <h3 class="category_title">소소한일상</h3>
-            </div>
-            <div class="category_arrow">→</div>
-          </div>
-          <div class="category_item">
-            <div>
-              <p class="category_info">오프라인전시</p>
-              <h3 class="category_title">불팥위의점심</h3>
-            </div>
-            <div class="category_arrow">→</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 이달의 작가 - 스택 슬라이더 ========== -->
-    <section id="artist">
-      <div class="wrap">
-        <div class="section_header">
-          <h2 class="section_title">이달의 작가</h2>
-          <p class="section_description">이달의 주목할 작가를 소개합니다.</p>
-        </div>
-
-        <div class="artist_slider_container" id="artistSliderContainer">
-          <div class="artist_stack_wrapper">
-            <div class="artist_card card_style_1" data-index="0" data-bg="./images/e1.png"></div>
-            <div class="artist_card card_style_2" data-index="1" data-bg="./images/e2.png"></div>
-            <div class="artist_card card_style_3" data-index="2" data-bg="./images/e3.png"></div>
-            <div class="artist_card card_style_4" data-index="3" data-bg="./images/e4.png"></div>
-            <div class="artist_card card_style_5" data-index="4" data-bg="./images/e5.png"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 무한루프 흐르는 텍스트 ========== -->
-    <div class="divider_banner">
-      <p class="divider_text">
-        &nbsp;넘치는 아이디어, 정리는 Artzipy에 맡기세요&nbsp;디지털 작품을 편리하게 정리하고, 전시·공유·판매까지&nbsp;온라인 감성 × 오프라인 공간, Artzipy에서
-        만나요&nbsp;넘치는 아이디어, 정리는 Artzipy에 맡기세요&nbsp;디지털 작품을 편리하게 정리하고, 전시·공유·판매까지&nbsp;온라인 감성 × 오프라인 공간, Artzipy에서
-        만나요&nbsp;&nbsp;넘치는 아이디어, 정리는 Artzipy에 맡기세요&nbsp;디지털 작품을 편리하게 정리하고, 전시·공유·판매까지&nbsp;온라인 감성 × 오프라인 공간, Artzipy에서
-        만나요&nbsp;넘치는 아이디어, 정리는 Artzipy에 맡기세요&nbsp;디지털 작품을 편리하게 정리하고, 전시·공유·판매까지&nbsp;온라인 감성 × 오프라인 공간, Artzipy에서
-        만나요&nbsp;
+<!-- ========== 상단 헤더 영역 ========== -->
+<div id="main_wrap">
+<header id="header">
+<div class="wrap">
+<div class="logo_section" id="logoSection">
+<div class="logo_img">
+<img alt="아트지피 로고" loading="eager" src="./images/a1.png" width="40"/>
+</div>
+<span class="logo_text">아트지피</span>
+</div>
+<ul class="nav">
+<li><a href="#platform_features">Artzipy</a></li>
+<li><a href="#exhibition">현재전시</a></li>
+<li><a href="#artist">이달의작가</a></li>
+<li><a href="#artwork_gallery">일러스트작품</a></li>
+<li><a href="#features_group_bg1">시설안내</a></li>
+<li><a href="#newsletter">뉴스레터</a></li>
+<li><a href="#products">아트상품</a></li>
+</ul>
+<div class="header_right">
+<div class="search_box">
+<input aria-label="사이트 검색" placeholder="검색" type="text"/>
+<div class="search_icon">
+<img alt="검색" loading="lazy" src="./images/a2.png" width="16"/>
+</div>
+</div>
+<div class="auth_links">
+<a href="#login">로그인</a>
+<a href="#signup">가입</a>
+</div>
+</div>
+</div>
+</header>
+<!-- ========== 메인 배너 슬라이더 ========== -->
+<section id="main_banner">
+<div class="banner_overlay"></div>
+<div class="banner_content">
+<h1 class="banner_title">Artzipy</h1>
+<p class="banner_subtitle">Artistic Vision</p>
+<p class="banner_description">창작부터 판매까지, 모든 것이 하나의 플랫폼에서 이루어지는 아트공간</p>
+</div>
+<div class="banner_slides">
+<div class="banner_slide active" data-bg="./images/b1.webp"></div>
+<div class="banner_slide" data-bg="./images/b2.webp"></div>
+<div class="banner_slide" data-bg="./images/b3.webp"></div>
+<div class="banner_slide" data-bg="./images/b4.webp"></div>
+<div class="banner_slide" data-bg="./images/b5.webp"></div>
+</div>
+<button aria-label="이전 슬라이드" class="banner_arrow prev" type="button">‹</button>
+<button aria-label="다음 슬라이드" class="banner_arrow next" type="button">›</button>
+<div class="banner_dots"></div>
+</section>
+<!-- ========== 플랫폼 기능 소개 ========== -->
+<section id="platform_features">
+<div class="wrap">
+<div class="features_title">
+<h2 class="section_title">당신의 예술을 <span class="zip_text">ZIP</span>하라!</h2>
+</div>
+<div class="features_grid">
+<div class="feature_card" data-bg="./images/c1.webp">
+<div class="feature_bg creation"></div>
+<div class="feature_overlay"></div>
+<div class="feature_content">
+<div class="feature_icon hover-trigger">
+<img alt="창작 아이콘" decoding="async" loading="lazy" src="./images/c1_1.png" width="80"/>
+</div>
+<h3 class="feature_title">창작</h3>
+<button class="feature_button" type="button">둘러보기</button>
+</div>
+</div>
+<div class="feature_card" data-bg="./images/c2.webp">
+<div class="feature_bg storage"></div>
+<div class="feature_overlay"></div>
+<div class="feature_content">
+<div class="feature_icon hover-trigger">
+<img alt="보관 아이콘" decoding="async" loading="lazy" src="./images/c2_1.png" width="65"/>
+</div>
+<h3 class="feature_title">보관</h3>
+<button class="feature_button" type="button">둘러보기</button>
+</div>
+</div>
+<div class="feature_card" data-bg="./images/c3.webp">
+<div class="feature_bg exhibition"></div>
+<div class="feature_overlay"></div>
+<div class="feature_content">
+<div class="feature_icon hover-trigger">
+<img alt="전시 아이콘" decoding="async" loading="lazy" src="./images/c3_1.png" width="65"/>
+</div>
+<h3 class="feature_title">전시</h3>
+<button class="feature_button" type="button">둘러보기</button>
+</div>
+</div>
+<div class="feature_card" data-bg="./images/c4.webp">
+<div class="feature_bg sales"></div>
+<div class="feature_overlay"></div>
+<div class="feature_content">
+<div class="feature_icon hover-trigger">
+<img alt="판매 아이콘" decoding="async" loading="lazy" src="./images/c4_1.png" width="60"/>
+</div>
+<h3 class="feature_title">판매</h3>
+<button class="feature_button" type="button">둘러보기</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== 현재 전시 ========== -->
+<section id="exhibition">
+<div class="wrap">
+<h2 class="exhibition_title">현재 전시</h2>
+<p class="exhibition_subtitle">포켓 안의 계절들 — Artzipy 개관전</p>
+<div class="exhibition_details_row">
+<div class="detail_item">
+<img alt="일정" class="detail_icon_img" decoding="async" loading="lazy" src="./images/d1.png"/>
+<span class="detail_text">2025.08.10(토) ~ 09.01(일)</span>
+</div>
+<div class="detail_item">
+<img alt="시간" class="detail_icon_img" decoding="async" loading="lazy" src="./images/d2.png"/>
+<span class="detail_text">매일 11:00 — 19:00 (월요일 휴관)</span>
+</div>
+<div class="detail_item">
+<img alt="위치" class="detail_icon_img" decoding="async" loading="lazy" src="./images/d3.png"/>
+<span class="detail_text">부산광역시 중구 중앙대로 26 10층 Artzipy Gallery</span>
+</div>
+</div>
+<div class="exhibition_images">
+<div class="exhibition_img hover-zoom">
+<img alt="나를찾아서 전시 작품" decoding="async" loading="lazy" src="./images/d4.webp"/>
+</div>
+<div class="exhibition_img hover-zoom">
+<img alt="소소한일상 전시 작품" decoding="async" loading="lazy" src="./images/d5.webp"/>
+</div>
+<div class="exhibition_img hover-zoom">
+<img alt="불팥위의점심 전시 작품" decoding="async" loading="lazy" src="./images/d6.webp"/>
+</div>
+</div>
+<div class="exhibition_categories">
+<div class="category_item">
+<div>
+<p class="category_info">오프라인전시</p>
+<h3 class="category_title">나를 찾아서</h3>
+</div>
+<div class="category_arrow">→</div>
+</div>
+<div class="category_item">
+<div>
+<p class="category_info">오프라인전시</p>
+<h3 class="category_title">소소한일상</h3>
+</div>
+<div class="category_arrow">→</div>
+</div>
+<div class="category_item">
+<div>
+<p class="category_info">오프라인전시</p>
+<h3 class="category_title">불팥위의점심</h3>
+</div>
+<div class="category_arrow">→</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== 이달의 작가 - 스택 슬라이더 ========== -->
+<section id="artist">
+<div class="wrap">
+<div class="section_header">
+<h2 class="section_title">이달의 작가</h2>
+<p class="section_description">이달의 주목할 작가를 소개합니다.</p>
+</div>
+<div class="artist_slider_container" id="artistSliderContainer">
+<div class="artist_stack_wrapper">
+<div class="artist_card card_style_1" data-bg="./images/e1.webp" data-index="0"></div>
+<div class="artist_card card_style_2" data-bg="./images/e2.webp" data-index="1"></div>
+<div class="artist_card card_style_3" data-bg="./images/e3.webp" data-index="2"></div>
+<div class="artist_card card_style_4" data-bg="./images/e4.webp" data-index="3"></div>
+<div class="artist_card card_style_5" data-bg="./images/e5.webp" data-index="4"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== 무한루프 흐르는 텍스트 ========== -->
+<div class="divider_banner">
+<p class="divider_text">
+         넘치는 아이디어, 정리는 Artzipy에 맡기세요 디지털 작품을 편리하게 정리하고, 전시·공유·판매까지 온라인 감성 × 오프라인 공간, Artzipy에서
+        만나요 넘치는 아이디어, 정리는 Artzipy에 맡기세요 디지털 작품을 편리하게 정리하고, 전시·공유·판매까지 온라인 감성 × 오프라인 공간, Artzipy에서
+        만나요  넘치는 아이디어, 정리는 Artzipy에 맡기세요 디지털 작품을 편리하게 정리하고, 전시·공유·판매까지 온라인 감성 × 오프라인 공간, Artzipy에서
+        만나요 넘치는 아이디어, 정리는 Artzipy에 맡기세요 디지털 작품을 편리하게 정리하고, 전시·공유·판매까지 온라인 감성 × 오프라인 공간, Artzipy에서
+        만나요 
       </p>
-    </div>
-
-    <!-- ========== 작품 갤러리 ========== -->
-    <section id="artwork_gallery">
-      <div class="wrap">
-        <div class="section_header">
-          <h2 class="section_title">전체 작품을 보여드립니다.</h2>
-        </div>
-
-        <div class="gallery_filters">
-          <div class="filter_tags_aligned">
-            <span class="filter_tag best">BEST</span>
-            <span class="filter_tag new">New</span>
-          </div>
-
-          <div class="filter_categories">
-            <div class="category_filters">
-              <button class="category_btn active" type="button">All 모든작품</button>
-              <button class="category_btn" type="button">Daily Life 일상</button>
-              <button class="category_btn" type="button">몽환적 Dreamy</button>
-              <button class="category_btn" type="button">Dark 어둠</button>
-              <button class="category_btn" type="button">Fantasy판타지</button>
-              <button class="category_btn" type="button">SF 공상과학</button>
-            </div>
-
-            <div class="search_bar">
-              <input type="text" placeholder="검색" aria-label="작품 검색">
-              <div class="search_icon_small">
-                <img src="./images/f0.png" alt="검색" width="16" loading="lazy" decoding="async">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="artwork_grid">
-          <div class="artwork_row">
-            <div class="artwork_images">
-              <div class="artwork_img"><img src="./images/f1.png" alt="다운&업 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f2.png" alt="풀팥위의 점심 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f3.png" alt="1990s 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f4.png" alt="햇살좋은날 작품" width="301" loading="lazy" decoding="async"></div>
-            </div>
-            <div class="artwork_titles">
-              <span class="artwork_title">다운&업</span>
-              <span class="artwork_title">풀팥위의 점심</span>
-              <span class="artwork_title">1990s</span>
-              <span class="artwork_title">햇살좋은날</span>
-            </div>
-          </div>
-
-          <div class="artwork_row">
-            <div class="artwork_images">
-              <div class="artwork_img"><img src="./images/f5.png" alt="C마이너 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f6.png" alt="달빛 아래 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f7.png" alt="새와고양이 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f8.png" alt="당신의소원은 작품" width="301" loading="lazy" decoding="async"></div>
-            </div>
-            <div class="artwork_titles">
-              <span class="artwork_title">C마이너</span>
-              <span class="artwork_title">달빛 아래</span>
-              <span class="artwork_title">새와고양이</span>
-              <span class="artwork_title">당신의소원은</span>
-            </div>
-          </div>
-
-          <div class="artwork_row">
-            <div class="artwork_images">
-              <div class="artwork_img"><img src="./images/f9.png" alt="일상 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f10.png" alt="벚꽃아래 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f11.png" alt="타임 작품" width="301" loading="lazy" decoding="async"></div>
-              <div class="artwork_img"><img src="./images/f12.png" alt="신비로운세계 작품" width="301" loading="lazy" decoding="async"></div>
-            </div>
-            <div class="artwork_titles">
-              <span class="artwork_title">일상</span>
-              <span class="artwork_title">벚꽃아래</span>
-              <span class="artwork_title">타임</span>
-              <span class="artwork_title">신비로운세계</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 시설안내 섹션 1 ========== -->
-    <section class="features_group_bg1" id="features_group_bg1">
-      <h2 class="section_main_title">아트지피 시설안내</h2>
-
-      <div class="feature_intro_section">
-        <div class="feature_intro_container">
-          <div class="feature_intro_content">
-            <div class="feature_intro_text animate-slide-left">
-              <h2 class="feature_intro_title">창작의 즐거움 - <span class="feature_highlight creation">Creation</span></h2>
-              <p class="feature_intro_description">
-                다양한 아티스트들이 모여 함께<br>
+</div>
+<!-- ========== 작품 갤러리 ========== -->
+<section id="artwork_gallery">
+<div class="wrap">
+<div class="section_header">
+<h2 class="section_title">전체 작품을 보여드립니다.</h2>
+</div>
+<div class="gallery_filters">
+<div class="filter_tags_aligned">
+<span class="filter_tag best">BEST</span>
+<span class="filter_tag new">New</span>
+</div>
+<div class="filter_categories">
+<div class="category_filters">
+<button class="category_btn active" type="button">All 모든작품</button>
+<button class="category_btn" type="button">Daily Life 일상</button>
+<button class="category_btn" type="button">몽환적 Dreamy</button>
+<button class="category_btn" type="button">Dark 어둠</button>
+<button class="category_btn" type="button">Fantasy판타지</button>
+<button class="category_btn" type="button">SF 공상과학</button>
+</div>
+<div class="search_bar">
+<input aria-label="작품 검색" placeholder="검색" type="text"/>
+<div class="search_icon_small">
+<img alt="검색" decoding="async" loading="lazy" src="./images/f0.png" width="16"/>
+</div>
+</div>
+</div>
+</div>
+<div class="artwork_grid">
+<div class="artwork_row">
+<div class="artwork_images">
+<div class="artwork_img"><img alt="다운&amp;업 작품" decoding="async" loading="lazy" src="./images/f1.webp" width="301"/></div>
+<div class="artwork_img"><img alt="풀팥위의 점심 작품" decoding="async" loading="lazy" src="./images/f2.webp" width="301"/></div>
+<div class="artwork_img"><img alt="1990s 작품" decoding="async" loading="lazy" src="./images/f3.webp" width="301"/></div>
+<div class="artwork_img"><img alt="햇살좋은날 작품" decoding="async" loading="lazy" src="./images/f4.webp" width="301"/></div>
+</div>
+<div class="artwork_titles">
+<span class="artwork_title">다운&amp;업</span>
+<span class="artwork_title">풀팥위의 점심</span>
+<span class="artwork_title">1990s</span>
+<span class="artwork_title">햇살좋은날</span>
+</div>
+</div>
+<div class="artwork_row">
+<div class="artwork_images">
+<div class="artwork_img"><img alt="C마이너 작품" decoding="async" loading="lazy" src="./images/f5.webp" width="301"/></div>
+<div class="artwork_img"><img alt="달빛 아래 작품" decoding="async" loading="lazy" src="./images/f6.webp" width="301"/></div>
+<div class="artwork_img"><img alt="새와고양이 작품" decoding="async" loading="lazy" src="./images/f7.webp" width="301"/></div>
+<div class="artwork_img"><img alt="당신의소원은 작품" decoding="async" loading="lazy" src="./images/f8.webp" width="301"/></div>
+</div>
+<div class="artwork_titles">
+<span class="artwork_title">C마이너</span>
+<span class="artwork_title">달빛 아래</span>
+<span class="artwork_title">새와고양이</span>
+<span class="artwork_title">당신의소원은</span>
+</div>
+</div>
+<div class="artwork_row">
+<div class="artwork_images">
+<div class="artwork_img"><img alt="일상 작품" decoding="async" loading="lazy" src="./images/f9.webp" width="301"/></div>
+<div class="artwork_img"><img alt="벚꽃아래 작품" decoding="async" loading="lazy" src="./images/f10.webp" width="301"/></div>
+<div class="artwork_img"><img alt="타임 작품" decoding="async" loading="lazy" src="./images/f11.webp" width="301"/></div>
+<div class="artwork_img"><img alt="신비로운세계 작품" decoding="async" loading="lazy" src="./images/f12.webp" width="301"/></div>
+</div>
+<div class="artwork_titles">
+<span class="artwork_title">일상</span>
+<span class="artwork_title">벚꽃아래</span>
+<span class="artwork_title">타임</span>
+<span class="artwork_title">신비로운세계</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== 시설안내 섹션 1 ========== -->
+<section class="features_group_bg1" id="features_group_bg1">
+<h2 class="section_main_title">아트지피 시설안내</h2>
+<div class="feature_intro_section">
+<div class="feature_intro_container">
+<div class="feature_intro_content">
+<div class="feature_intro_text animate-slide-left">
+<h2 class="feature_intro_title">창작의 즐거움 - <span class="feature_highlight creation">Creation</span></h2>
+<p class="feature_intro_description">
+                다양한 아티스트들이 모여 함께<br/>
                 창작의 즐거움을 함께 만들어가는 스튜디오
               </p>
-              <button class="feature_intro_btn creation" type="button">Sign Up Now</button>
-            </div>
-
-            <div class="feature_intro_image animate-slide-right" data-slider="creation">
-              <img class="slide_image active" data-src="./images/g1.png" alt="창작 공간 1" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/g2.png" alt="창작 공간 2" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/g3.png" alt="창작 공간 3" loading="lazy" decoding="async">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature_intro_section">
-        <div class="feature_intro_container">
-          <div class="feature_intro_content">
-            <div class="feature_intro_image animate-slide-left" data-slider="storage">
-              <img class="slide_image active" data-src="./images/h1.png" alt="보관 공간 1" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/h2.png" alt="보관 공간 2" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/h3.png" alt="보관 공간 3" loading="lazy" decoding="async">
-            </div>
-
-            <div class="feature_intro_text animate-slide-right">
-              <h2 class="feature_intro_title">아트 보관 - <span class="feature_highlight storage">Storage</span></h2>
-              <p class="feature_intro_description">
-                소중한 작품과 아트 상품을 안전하게 보관하여,<br>
+<button class="feature_intro_btn creation" type="button">Sign Up Now</button>
+</div>
+<div class="feature_intro_image animate-slide-right" data-slider="creation">
+<img alt="창작 공간 1" class="slide_image active" data-src="./images/g1.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="창작 공간 2" class="slide_image" data-src="./images/g2.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="창작 공간 3" class="slide_image" data-src="./images/g3.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</div>
+</div>
+</div>
+</div>
+<div class="feature_intro_section">
+<div class="feature_intro_container">
+<div class="feature_intro_content">
+<div class="feature_intro_image animate-slide-left" data-slider="storage">
+<img alt="보관 공간 1" class="slide_image active" data-src="./images/h1.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="보관 공간 2" class="slide_image" data-src="./images/h2.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="보관 공간 3" class="slide_image" data-src="./images/h3.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</div>
+<div class="feature_intro_text animate-slide-right">
+<h2 class="feature_intro_title">아트 보관 - <span class="feature_highlight storage">Storage</span></h2>
+<p class="feature_intro_description">
+                소중한 작품과 아트 상품을 안전하게 보관하여,<br/>
                 언제든지 쉽게 접근 가능한 디지털 아카이빙 공간
               </p>
-              <button class="feature_intro_btn storage" type="button">Sign Up Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 시설안내 섹션 2 ========== -->
-    <section class="features_group_bg2">
-
-      <div class="feature_intro_section">
-        <div class="feature_intro_container">
-          <div class="feature_intro_content">
-            <div class="feature_intro_text animate-slide-left">
-              <h2 class="feature_intro_title">갤러리 - <span class="feature_highlight gallery">Gallery</span></h2>
-              <p class="feature_intro_description">
-                작품을 통해 사람들과 소통하며<br>
+<button class="feature_intro_btn storage" type="button">Sign Up Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== 시설안내 섹션 2 ========== -->
+<section class="features_group_bg2">
+<div class="feature_intro_section">
+<div class="feature_intro_container">
+<div class="feature_intro_content">
+<div class="feature_intro_text animate-slide-left">
+<h2 class="feature_intro_title">갤러리 - <span class="feature_highlight gallery">Gallery</span></h2>
+<p class="feature_intro_description">
+                작품을 통해 사람들과 소통하며<br/>
                 작가의 이야기를 전하는 전시 공간
               </p>
-              <button class="feature_intro_btn gallery" type="button">Sign Up Now</button>
-            </div>
-
-            <div class="feature_intro_image animate-slide-right" data-slider="gallery">
-              <img class="slide_image active" data-src="./images/i1.png" alt="갤러리 공간 1" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/i2.png" alt="갤러리 공간 2" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/i3.png" alt="갤러리 공간 3" loading="lazy" decoding="async">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature_intro_section">
-        <div class="feature_intro_container">
-          <div class="feature_intro_content">
-            <div class="feature_intro_image animate-slide-left" data-slider="sales">
-              <img class="slide_image active" data-src="./images/j1.png" alt="판매 공간 1" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/j2.png" alt="판매 공간 2" loading="lazy" decoding="async">
-              <img class="slide_image" data-src="./images/j3.png" alt="판매 공간 3" loading="lazy" decoding="async">
-            </div>
-
-            <div class="feature_intro_text animate-slide-right">
-              <h2 class="feature_intro_title">판매 - <span class="feature_highlight sales">Sales</span></h2>
-              <p class="feature_intro_description">
-                작품 및 아트 상품을 소비자에게 자연스럽게 이어주는<br>
+<button class="feature_intro_btn gallery" type="button">Sign Up Now</button>
+</div>
+<div class="feature_intro_image animate-slide-right" data-slider="gallery">
+<img alt="갤러리 공간 1" class="slide_image active" data-src="./images/i1.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="갤러리 공간 2" class="slide_image" data-src="./images/i2.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="갤러리 공간 3" class="slide_image" data-src="./images/i3.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</div>
+</div>
+</div>
+</div>
+<div class="feature_intro_section">
+<div class="feature_intro_container">
+<div class="feature_intro_content">
+<div class="feature_intro_image animate-slide-left" data-slider="sales">
+<img alt="판매 공간 1" class="slide_image active" data-src="./images/j1.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="판매 공간 2" class="slide_image" data-src="./images/j2.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+<img alt="판매 공간 3" class="slide_image" data-src="./images/j3.webp" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+</div>
+<div class="feature_intro_text animate-slide-right">
+<h2 class="feature_intro_title">판매 - <span class="feature_highlight sales">Sales</span></h2>
+<p class="feature_intro_description">
+                작품 및 아트 상품을 소비자에게 자연스럽게 이어주는<br/>
                 통합 마켓플레이스
               </p>
-              <button class="feature_intro_btn sales" type="button">Sign Up Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 프로모션 배너 ========== -->
-    <div class="promo_banner">
-      <p class="promo_text">
-        &nbsp;Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요!&nbsp;오직 9월 한달! 1인 전용 독립 작업실이 월 30만원~?&nbsp;에어컨 빵빵, 영감 팡팡! 지금 바로 Artzipy로
-        문의 고고✏️&nbsp;Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요!&nbsp;오직 9월 한달! 1인 전용 독립 작업실이 월 30만원~?&nbsp;에어컨 빵빵, 영감 팡팡! 지금 바로
-        Artzipy로 문의 고고✏️&nbsp; &nbsp;Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요!&nbsp;오직 9월 한달! 1인 전용 독립 작업실이 월 30만원~?&nbsp;에어컨 빵빵,
-        영감 팡팡! 지금 바로 Artzipy로 문의 고고✏️&nbsp;Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요!&nbsp;오직 9월 한달! 1인 전용 독립 작업실이 월
-        30만원~?&nbsp;에어컨 빵빵, 영감 팡팡! 지금 바로 Artzipy로 문의 고고✏️&nbsp;
+<button class="feature_intro_btn sales" type="button">Sign Up Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== 프로모션 배너 ========== -->
+<div class="promo_banner">
+<p class="promo_text">
+         Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요! 오직 9월 한달! 1인 전용 독립 작업실이 월 30만원~? 에어컨 빵빵, 영감 팡팡! 지금 바로 Artzipy로
+        문의 고고✏️ Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요! 오직 9월 한달! 1인 전용 독립 작업실이 월 30만원~? 에어컨 빵빵, 영감 팡팡! 지금 바로
+        Artzipy로 문의 고고✏️   Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요! 오직 9월 한달! 1인 전용 독립 작업실이 월 30만원~? 에어컨 빵빵,
+        영감 팡팡! 지금 바로 Artzipy로 문의 고고✏️ Artzipy에서 ☀️올여름, 창작열정에 불🔥 붙이세요! 오직 9월 한달! 1인 전용 독립 작업실이 월
+        30만원~? 에어컨 빵빵, 영감 팡팡! 지금 바로 Artzipy로 문의 고고✏️ 
       </p>
-    </div>
-
-    <!-- ========== 뉴스레터 섹션 ========== -->
-    <section id="newsletter">
-      <div class="wrap">
-
-        <div class="section_header_row">
-          <h2>ArtZipy 뉴스레터</h2>
-          <button class="view_all_btn" type="button">ArtZipy 뉴스레터 구독하기</button>
-        </div>
-
-        <div class="slider_wrapper" id="newsletterSlider">
-          <div class="slider_track" id="newsletterTrack">
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k1.png" alt="작가 인터뷰" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">작가 인터뷰</h3>
-              <p class="newsletter_subtitle">
-                <a href="#interview1" class="newsletter_link">포켓 안의 계절들 김영호 작가 인터뷰1편</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k2.png" alt="아트지피 플러스" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">아트지피 플러스</h3>
-              <p class="newsletter_subtitle">
-                <a href="#studio1" class="newsletter_link">작업실 탐방기</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k3.png" alt="아트지피 플러스" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">아트지피 플러스</h3>
-              <p class="newsletter_subtitle">
-                <a href="#character1" class="newsletter_link">내 캐릭터를 소개합니다</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k4.png" alt="포커스" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">포커스</h3>
-              <p class="newsletter_subtitle">
-                <a href="#class1" class="newsletter_link">아트수업 교실 나도오늘은 작가</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k5.png" alt="작가 인터뷰" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">작가 인터뷰</h3>
-              <p class="newsletter_subtitle">
-                <a href="#interview2" class="newsletter_link">구름이 김영호 작가 인터뷰2편</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k6.png" alt="아트지피 플러스" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">아트지피 플러스</h3>
-              <p class="newsletter_subtitle">
-                <a href="#studio2" class="newsletter_link">작업실 탐방기</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k7.png" alt="아트지피 플러스" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">아트지피 플러스</h3>
-              <p class="newsletter_subtitle">
-                <a href="#character2" class="newsletter_link">내 캐릭터를 소개합니다</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k8.png" alt="포커스" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">포커스</h3>
-              <p class="newsletter_subtitle">
-                <a href="#shop1" class="newsletter_link">아트상품 판매</a>
-              </p>
-            </div>
-
-            <div class="newsletter_item">
-              <div class="newsletter_img">
-                <img src="./images/k9.png" alt="포커스" width="313" loading="lazy" decoding="async">
-              </div>
-              <h3 class="newsletter_title">포커스</h3>
-              <p class="newsletter_subtitle">
-                <a href="#shop2" class="newsletter_link">아트상품 판매</a>
-              </p>
-            </div>
-          </div>
-
-          <button class="slider_arrow prev" data-direction="prev" data-slider="newsletter" type="button">
-            <img src="./images/z1.png" alt="이전 슬라이드" width="50" height="50" loading="lazy" decoding="async">
-          </button>
-
-          <button class="slider_arrow next" data-direction="next" data-slider="newsletter" type="button">
-            <img src="./images/z2.png" alt="다음 슬라이드" width="50" height="50" loading="lazy" decoding="async">
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 상품 섹션 ========== -->
-    <section id="products">
-      <div class="wrap">
-
-        <div class="section_header_row">
-          <h2>ArtZipy 상품</h2>
-          <button class="view_all_btn" type="button">아트상품 구매하기</button>
-        </div>
-
-        <div class="slider_wrapper" id="productsSlider">
-          <div class="slider_track" id="productsTrack">
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l1.png" alt="머그컵" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">머그컵</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l2.png" alt="볼펜" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">볼펜</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l3.png" alt="인쇄물" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">인쇄물</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l4.png" alt="포스터" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">포스터</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l5.png" alt="뱃지" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">뱃지</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l6.png" alt="공책" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">공책</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l7.png" alt="에코백" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">에코백</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l8.png" alt="티셔츠" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">티셔츠</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-
-            <div class="product_item">
-              <div class="product_img">
-                <img src="./images/l9.png" alt="마우스패드" width="313" loading="lazy" decoding="async">
-              </div>
-              <div class="product_footer">
-                <h3 class="product_title">마우스패드</h3>
-                <a href="#" class="product_link">+더알아보기</a>
-              </div>
-            </div>
-          </div>
-
-          <button class="slider_arrow prev" data-direction="prev" data-slider="products" type="button">
-            <img src="./images/z1.png" alt="이전 슬라이드" width="50" height="50" loading="lazy" decoding="async">
-          </button>
-
-          <button class="slider_arrow next" data-direction="next" data-slider="products" type="button">
-            <img src="./images/z2.png" alt="다음 슬라이드" width="50" height="50" loading="lazy" decoding="async">
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 스튜디오 안내 ========== -->
-    <section id="studio_info">
-      <div class="wrap">
-        <div class="studio_content">
-          <div class="studio_text">
-            <h2 class="studio_title">Artzipy 오프라인 스튜디오 안내</h2>
-            <p class="studio_description">
+</div>
+<!-- ========== 뉴스레터 섹션 ========== -->
+<section id="newsletter">
+<div class="wrap">
+<div class="section_header_row">
+<h2>ArtZipy 뉴스레터</h2>
+<button class="view_all_btn" type="button">ArtZipy 뉴스레터 구독하기</button>
+</div>
+<div class="slider_wrapper" id="newsletterSlider">
+<div class="slider_track" id="newsletterTrack">
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="작가 인터뷰" decoding="async" loading="lazy" src="./images/k1.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">작가 인터뷰</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#interview1">포켓 안의 계절들 김영호 작가 인터뷰1편</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="아트지피 플러스" decoding="async" loading="lazy" src="./images/k2.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">아트지피 플러스</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#studio1">작업실 탐방기</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="아트지피 플러스" decoding="async" loading="lazy" src="./images/k3.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">아트지피 플러스</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#character1">내 캐릭터를 소개합니다</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="포커스" decoding="async" loading="lazy" src="./images/k4.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">포커스</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#class1">아트수업 교실 나도오늘은 작가</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="작가 인터뷰" decoding="async" loading="lazy" src="./images/k5.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">작가 인터뷰</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#interview2">구름이 김영호 작가 인터뷰2편</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="아트지피 플러스" decoding="async" loading="lazy" src="./images/k6.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">아트지피 플러스</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#studio2">작업실 탐방기</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="아트지피 플러스" decoding="async" loading="lazy" src="./images/k7.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">아트지피 플러스</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#character2">내 캐릭터를 소개합니다</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="포커스" decoding="async" loading="lazy" src="./images/k8.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">포커스</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#shop1">아트상품 판매</a>
+</p>
+</div>
+<div class="newsletter_item">
+<div class="newsletter_img">
+<img alt="포커스" decoding="async" loading="lazy" src="./images/k9.webp" width="313"/>
+</div>
+<h3 class="newsletter_title">포커스</h3>
+<p class="newsletter_subtitle">
+<a class="newsletter_link" href="#shop2">아트상품 판매</a>
+</p>
+</div>
+</div>
+<button class="slider_arrow prev" data-direction="prev" data-slider="newsletter" type="button">
+<img alt="이전 슬라이드" decoding="async" height="50" loading="lazy" src="./images/z1.png" width="50"/>
+</button>
+<button class="slider_arrow next" data-direction="next" data-slider="newsletter" type="button">
+<img alt="다음 슬라이드" decoding="async" height="50" loading="lazy" src="./images/z2.png" width="50"/>
+</button>
+</div>
+</div>
+</section>
+<!-- ========== 상품 섹션 ========== -->
+<section id="products">
+<div class="wrap">
+<div class="section_header_row">
+<h2>ArtZipy 상품</h2>
+<button class="view_all_btn" type="button">아트상품 구매하기</button>
+</div>
+<div class="slider_wrapper" id="productsSlider">
+<div class="slider_track" id="productsTrack">
+<div class="product_item">
+<div class="product_img">
+<img alt="머그컵" decoding="async" loading="lazy" src="./images/l1.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">머그컵</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="볼펜" decoding="async" loading="lazy" src="./images/l2.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">볼펜</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="인쇄물" decoding="async" loading="lazy" src="./images/l3.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">인쇄물</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="포스터" decoding="async" loading="lazy" src="./images/l4.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">포스터</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="뱃지" decoding="async" loading="lazy" src="./images/l5.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">뱃지</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="공책" decoding="async" loading="lazy" src="./images/l6.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">공책</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="에코백" decoding="async" loading="lazy" src="./images/l7.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">에코백</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="티셔츠" decoding="async" loading="lazy" src="./images/l8.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">티셔츠</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+<div class="product_item">
+<div class="product_img">
+<img alt="마우스패드" decoding="async" loading="lazy" src="./images/l9.webp" width="313"/>
+</div>
+<div class="product_footer">
+<h3 class="product_title">마우스패드</h3>
+<a class="product_link" href="#">+더알아보기</a>
+</div>
+</div>
+</div>
+<button class="slider_arrow prev" data-direction="prev" data-slider="products" type="button">
+<img alt="이전 슬라이드" decoding="async" height="50" loading="lazy" src="./images/z1.png" width="50"/>
+</button>
+<button class="slider_arrow next" data-direction="next" data-slider="products" type="button">
+<img alt="다음 슬라이드" decoding="async" height="50" loading="lazy" src="./images/z2.png" width="50"/>
+</button>
+</div>
+</div>
+</section>
+<!-- ========== 스튜디오 안내 ========== -->
+<section id="studio_info">
+<div class="wrap">
+<div class="studio_content">
+<div class="studio_text">
+<h2 class="studio_title">Artzipy 오프라인 스튜디오 안내</h2>
+<p class="studio_description">
               작업부터 보관, 전시, 공유, 판매까지 ZIP처럼 간편하게 나만의 아트 공간을 이용해 보세요.
             </p>
-            <p class="studio_address">
-              부산광역시 중구<br>
-              중앙대로26 다원중앙타워 빌딩 10층<br>
+<p class="studio_address">
+              부산광역시 중구<br/>
+              중앙대로26 다원중앙타워 빌딩 10층<br/>
               아트지피
             </p>
-            <button class="studio_button" type="button">둘러보기→</button>
-          </div>
-
-          <div class="studio_img">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.2699781672245!2d129.0344047762389!3d35.09996886168458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e90af8798c73%3A0x4e3015aa23966ba!2z67aA7IKw64KY656Y65SU7J6Q7J207ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1754617575618!5m2!1sko!2skr"
-              width="762" height="493" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" title="아트지피 위치 지도">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 푸터 ========== -->
-    <footer id="footer">
-      <div class="wrap">
-        <div class="footer_left">
-          <div class="footer_logos">
-            <div class="footer_logo">
-              <img src="./images/n1.png" alt="아트지피 푸터 로고" width="47" loading="lazy" decoding="async">
-            </div>
-            <div class="footer_logo_text">
-              <img src="./images/n2.png" alt="아트지피 한글 로고" width="60" loading="lazy" decoding="async">
-            </div>
-          </div>
-          <p class="footer_info">
-            <span style="font-weight: 500;">아트지피</span>
+<button class="studio_button" type="button">둘러보기→</button>
+</div>
+<div class="studio_img">
+<iframe allowfullscreen="" height="493" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.2699781672245!2d129.0344047762389!3d35.09996886168458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e90af8798c73%3A0x4e3015aa23966ba!2z67aA7IKw64KY656Y65SU7J6Q7J207ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1754617575618!5m2!1sko!2skr" style="border:0;" title="아트지피 위치 지도" width="762">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== 푸터 ========== -->
+<footer id="footer">
+<div class="wrap">
+<div class="footer_left">
+<div class="footer_logos">
+<div class="footer_logo">
+<img alt="아트지피 푸터 로고" decoding="async" loading="lazy" src="./images/n1.png" width="47"/>
+</div>
+<div class="footer_logo_text">
+<img alt="아트지피 한글 로고" decoding="async" loading="lazy" src="./images/n2.png" width="60"/>
+</div>
+</div>
+<p class="footer_info">
+<span style="font-weight: 500;">아트지피</span>
             ㅣ주소:부산광역시 중구 중앙대로 26 다원중앙타워 빌딩 10층 ㅣ 051-000-0000 ㅣ 이메일 battler_taste_1o@icloud.com
           </p>
-        </div>
-
-        <div class="footer_social">
-          <div class="social_icon">
-            <img src="./images/n3.png" alt="디스코드" width="34" loading="lazy" decoding="async">
-          </div>
-          <div class="social_icon">
-            <img src="./images/n4.png" alt="인스타그램" width="34" loading="lazy" decoding="async">
-          </div>
-          <div class="social_icon">
-            <img src="./images/n5.png" alt="유튜브" width="34" loading="lazy" decoding="async">
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- ========== 로고 클릭 모달 ========== -->
-  <div id="logoModal" class="logo-modal">
-    <img src="./images/top2.png" alt="아트지피 상세 이미지" class="logo-modal-image" loading="lazy" decoding="async">
-  </div>
-
-  <!-- JavaScript 파일 로딩 -->
-  <script src="./script/artzipy08142.js"></script>
-
+</div>
+<div class="footer_social">
+<div class="social_icon">
+<img alt="디스코드" decoding="async" loading="lazy" src="./images/n3.png" width="34"/>
+</div>
+<div class="social_icon">
+<img alt="인스타그램" decoding="async" loading="lazy" src="./images/n4.png" width="34"/>
+</div>
+<div class="social_icon">
+<img alt="유튜브" decoding="async" loading="lazy" src="./images/n5.png" width="34"/>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!-- ========== 로고 클릭 모달 ========== -->
+<div class="logo-modal" id="logoModal">
+<img alt="아트지피 상세 이미지" class="logo-modal-image" decoding="async" loading="lazy" src="./images/top2.webp"/>
+</div>
+<!-- JavaScript 파일 로딩 -->
+<script src="./script/artzipy08142.js"></script>
 </body>
-
 </html>
